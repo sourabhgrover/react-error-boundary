@@ -15,7 +15,7 @@ interface ErrorBoundaryPropsWithComponent {
   ) => void
   onReset?: (...args: Array<unknown>) => void
   onError?: (error: Error, info: {componentStack: string}) => void
-  resetKeys?: Array<unknown>
+  resetKeys?: Array<unknown> | Object
   fallback?: never
   FallbackComponent: React.ComponentType<FallbackProps>
   fallbackRender?: never
